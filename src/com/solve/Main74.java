@@ -1,9 +1,9 @@
+package com.solve;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 //피보나치 수열 (재귀)
-class Main {
+class Main74 {
     static int[] fibo;//2단계:재귀함수의 최종값만 한번 계산하는 방식
     //하지만 중복 계산이 생기게된다.
     public int DFS(int n){
@@ -16,13 +16,13 @@ class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main74 T = new Main74();
         Scanner kb = new Scanner(System.in);
         int n= kb.nextInt();
         fibo=new int[n+1];
         T.DFS(n);
         for (int i=0; i<n; i++){
-        System.out.print(fibo[i]);
+            System.out.print(fibo[i]);
         }
     }
 }
