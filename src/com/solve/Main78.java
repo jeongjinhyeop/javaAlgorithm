@@ -17,7 +17,6 @@ public class Main78 {
             int len = Q.size();
             for (int i=0; i<len; i++){ //len 이 1인데 int i =1;  i<len 과 계속 맞지 않아 오류남
                 int x=Q.poll();
-
                 for (int j=0; j<3; j++) {
                     int nx = dis[j] + x;
                     if (nx==m) return L+1;
@@ -40,3 +39,4 @@ public class Main78 {
         System.out.println(T.BFS(n,m));
     }
 }
+
