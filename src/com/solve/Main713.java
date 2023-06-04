@@ -26,7 +26,7 @@ public class Main713 {
         n= kb.nextInt();
         m= kb.nextInt();
         graph = new ArrayList<ArrayList<Integer>>();
-        for (int i=0; i<=n; i++){
+        for (int i=0; i<=n ; i++){
             graph.add(new ArrayList<Integer>());
         }
         ch = new int[n+1];

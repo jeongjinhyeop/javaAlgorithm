@@ -1,6 +1,6 @@
 package com.solve;
 
-import com.sun.tools.javac.Main;
+
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class Main712 {
         m= kb.nextInt();
         graph = new int[n+1][n+1];
         ch = new int[n+1];
-        for (int i=0; i<m; i++){
+        for (int i=0; i<m; i++){//왜 m이지?  m번 반복하면서 m개의 값을 받아오는 과정
             int a= kb.nextInt();
             int b = kb.nextInt();
             graph[a][b]=1;
