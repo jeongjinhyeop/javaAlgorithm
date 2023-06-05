@@ -7,8 +7,8 @@ public class Main76 {
     public void DFS(int L){
         if(L==n+1){
             String tmp="";
-            for (int i=1; i<n; i++){
-                if (ch[i]==1) tmp+=i;
+            for (int i=1; i<=n; i++){
+                if (ch[i]==1) tmp+=(i+" ");
             }
             if(tmp.length()>0) System.out.println(tmp);
             }else{

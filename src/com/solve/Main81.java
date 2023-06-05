@@ -1,8 +1,10 @@
+package com.solve;
+
 
 import java.util.*;
 
 
-class Main {
+class Main81 {
 
     static int n,total=0;
     static String answer="NO";
@@ -27,9 +29,9 @@ class Main {
 
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main81 T = new Main81();
         Scanner kb = new Scanner(System.in);
-         n = kb.nextInt();
+        n = kb.nextInt();
         int[] arr = new int[n];
         for (int i=0; i<n; i++){
             arr[i]=kb.nextInt();
@@ -39,4 +41,3 @@ class Main {
         System.out.println(answer);
     }
 }
-
