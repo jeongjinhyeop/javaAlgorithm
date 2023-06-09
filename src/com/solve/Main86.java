@@ -1,10 +1,9 @@
-
-
+package com.solve;
 
 import java.util.*;
 
 
-class Main {
+class Main86 {
     //동전 교환
     static int n,m;
     static int[] arr,ch,pm;
@@ -28,7 +27,7 @@ class Main {
 
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main86 T = new Main86();
         Scanner kb = new Scanner(System.in);
         n= kb.nextInt();
         m= kb.nextInt();
@@ -42,5 +41,3 @@ class Main {
         T.DFS(0);
     }
 }
-
-
