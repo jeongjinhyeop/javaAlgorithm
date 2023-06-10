@@ -13,8 +13,8 @@ class Main84 {
             for (int x: pm)System.out.print(x+" ");
             System.out.println();
         } else {
-            for (int i = 0; i <m; i++) {
-                pm[i]=i;
+            for (int i = 1; i <=n; i++) {
+                pm[L]=i;
                 DFS(L+1);
             }
         }

@@ -6,40 +6,48 @@ import java.util.*;
 
 class Main {
     //동전 교환
-    static int n,m;
-    static int[] arr,ch,pm;
-    public  void DFS(int L) {
-        if (L == m) {
-            for (int x: pm)System.out.print(x+" ");
-            System.out.println();
+    static int n,f;
+    boolean flag;
+    static int[] b,p,ch;
+    static int[][] dy=new int[35][35];
+    public int combi(int n,int r){
+        if (dy[n][r]>0) return dy[n][r];
+        if (r==0||n==r) return 1;
+        else return dy[n][r]=combi(n-1,r-1)+combi(n-1,r);
+    }
+    public void DFS( int L, int sum) {
+        if (flag) return;//스택프레임에 담겨있는거 답나오면 다 날려버림
+        if (L == n) {
+            if (sum==f){
+                for (int x :p) System.out.print(x+" ");
+                flag=true;
+            }
         } else {
-            for (int i = 0; i <n; i++) {
-                if (ch[i]==0) {
-                    ch[i]=1;
-                    pm[L] = arr[i];
-                    DFS(L + 1);
-                    ch[i]=0;
+            for (int i=1; i<=n; i++) {
+              if (ch[i]==0){
+                  ch[i]=1;
+                  p[L]=i;
+                  DFS(L+1, sum+(p[L]*b[L]));
+                  ch[i]=0;
+
                 }
+
             }
         }
-
     }
-
-
-
     public static void main(String[] args) {
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
         n= kb.nextInt();
-        m= kb.nextInt();
-        arr= new int[n];
-        ch=new int[n];
-        int[] a = new int[m];
-        for (int i=0; i<n; i++ ){
-            arr[i]=kb.nextInt();
+        f= kb.nextInt();
+        b=new int[n];
+        p=new int[n];
+        ch=new int[n+1];
+        for (int i=0; i<n; i++) {
+            b[i]=T.combi(n-1,i);
         }
-        pm=new int[m];
-        T.DFS(0);
+        T.DFS(0,0);
+
     }
 }
 
