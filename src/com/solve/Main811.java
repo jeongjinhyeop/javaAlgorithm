@@ -9,7 +9,6 @@ import java.util.*;
     }
 }*/
 class Main811 {
-    //동전 교환
     static int answer=0;
     static int[] dx={-1,0,1,0},dy={0,-1,0,1};
     static int[][] dis , board;
