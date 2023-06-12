@@ -2,7 +2,7 @@ package com.solve;
 
 import java.util.Scanner;
 
-public class Main88 {
+public class Main89 {
     static int[] combi;
     static int n,m;
     public void DFS(int L,int s){
@@ -18,7 +18,7 @@ public class Main88 {
         }
     }
     public static void main(String[] args){
-        Main88 T = new Main88();
+        Main89 T = new Main89();
         Scanner kb = new Scanner(System.in);
         n= kb.nextInt();
         m=kb.nextInt();

@@ -13,7 +13,7 @@ import java.util.Queue;
 //        lt=rt=null;
 //    }
 //}
-public class Main80 {
+public class Main710 {
     Node root;
 
     public int BFS(Node root) {
@@ -34,7 +34,7 @@ public class Main80 {
         return 0;
     }
     public static void main(String[] args){
-        Main80 tree = new Main80();
+        Main710 tree = new Main710();
         tree.root = new Node(1);
         tree.root.lt = new Node(2);
         tree.root.rt = new Node(3);
