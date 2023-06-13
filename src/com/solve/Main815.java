@@ -1,14 +1,14 @@
-
+package com.solve;
 
 import java.util.*;
-class Point{
+/*class Point{
     public int x,y;
     Point(int x , int y){
         this.x=x;
         this.y=y;
     }
-}
-class Main {
+}*/
+class Main815 {
 
     static int n,m,answer=Integer.MAX_VALUE,len;
     static int[] combi;
@@ -34,7 +34,7 @@ class Main {
         }
     }
     public static void main(String[] args) {
-        Main T = new Main();
+        Main815 T = new Main815();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         m = kb.nextInt();
@@ -54,5 +54,3 @@ class Main {
     }
 
 }
-
-

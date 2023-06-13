@@ -34,8 +34,8 @@ class Main812 {
     public static void main(String[] args) {
         Main812 T = new Main812();
         Scanner kb = new Scanner(System.in);
-        n = kb.nextInt();
         m = kb.nextInt();
+        n = kb.nextInt();
         board = new int[n][m];
         day = new int[n][m];
         for (int i = 0; i < n; i++) {
@@ -45,18 +45,17 @@ class Main812 {
             }
         }
         T.BFS();
-
-        boolean flag = true;
-        int answer = Integer.MIN_VALUE;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (board[i][j] == 0) flag = false;
+        boolean flag=true;
+        int answer=Integer.MIN_VALUE;
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(board[i][j]==0) flag=false;
             }
         }
-        if (flag) {
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    answer = Math.max(answer, day[i][j]);
+        if(flag){
+            for(int i=0; i<n; i++){
+                for(int j=0; j<m; j++){
+                    answer=Math.max(answer, day[i][j]);
                 }
             }
             System.out.println(answer);
