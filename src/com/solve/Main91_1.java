@@ -1,15 +1,17 @@
+package com.solve;
+
 
 
 import java.util.*;
 
 class a{
     public int x,y;
-        a(int x,int y) {
-         this.x = x;
-         this.y = y;
-     }
+    a(int x,int y) {
+        this.x = x;
+        this.y = y;
+    }
 }
-class Main{
+class Main91_1{
     static int n,answer;
     static int[] w,h;
     static ArrayList<a> wh= new ArrayList<>();
@@ -31,13 +33,13 @@ class Main{
 
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main91_1 T = new Main91_1();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         w= new int[n];
         h= new int[n];
         for (int i=0; i<n; i++){
-           wh.add(new a(kb.nextInt(), kb.nextInt()));
+            wh.add(new a(kb.nextInt(), kb.nextInt()));
         }
         System.out.println(T.Solution());
 
