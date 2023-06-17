@@ -2,27 +2,27 @@ package com.solve;
 
 import java.util.*;
 
-class a implements Comparable<a>{
+class b implements Comparable<b>{
     public int x,y;
-    a(int x,int y) {
+    b(int x,int y) {
         this.x = x;
         this.y = y;
     }
 
     @Override
-    public int compareTo(a o) {
+    public int compareTo(b o) {
         if(o.y==this.y) return this.x-o.x;//오름차순
         else return this.y-o.y;
     }
 }
-class Main{
+class Main92{
     static int n,cnt=0;
-    static ArrayList<a> arr=new ArrayList<>();
+    static ArrayList<b> arr=new ArrayList<>();
 
     public int Solution() {
 
         int et=0;
-        for (a ar: arr)
+        for (b ar: arr)
         {
             if (ar.x>=et){
                 cnt++;
@@ -37,11 +37,11 @@ class Main{
 
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main92 T = new Main92();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         for (int i=0; i<n; i++){
-            arr.add(new a(kb.nextInt(), kb.nextInt()));
+            arr.add(new b(kb.nextInt(), kb.nextInt()));
         }
         Collections.sort(arr);
         System.out.println(T.Solution());
