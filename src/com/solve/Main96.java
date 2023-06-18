@@ -1,6 +1,8 @@
+package com.solve;
+
 import java.util.*;
 
-class Main {
+class Main96 {
     static int[] unf;
     public static int Find(int v){
         if (v==unf[v]) return v;
