@@ -1,3 +1,5 @@
+package com.solve;
+
 import java.util.*;
 
 class Edge implements Comparable<Edge>{
@@ -15,7 +17,7 @@ class Edge implements Comparable<Edge>{
         return this.cost-ob.cost;
     }
 }
-class Main {
+class Main97 {
     static int[] unf;
     public static int Find(int v){
         if (v==unf[v]) return v;
@@ -37,7 +39,7 @@ class Main {
             int a =kb.nextInt();
             int b = kb.nextInt();
             int c =kb.nextInt();
-                arr.add(new Edge(a,b,c));
+            arr.add(new Edge(a,b,c));
         }
         int answer=0;
         Collections.sort(arr);
