@@ -7,7 +7,7 @@ class Main74 {
     static int[] fibo;//2단계:재귀함수의 최종값만 한번 계산하는 방식
     //하지만 중복 계산이 생기게된다.
     public int DFS(int n){
-        if (fibo[n]>0) return fibo[n]; //3단계:메모리제이션
+        if (fibo[n]>0) return fibo[n]; //3단계:메모이제이션
         if (n==1) return fibo[n]=1;//배열 없는게 1단계
         else if(n==2) return fibo[n]=1;
         else return fibo[n]=DFS(n-2)+DFS(n-1);
