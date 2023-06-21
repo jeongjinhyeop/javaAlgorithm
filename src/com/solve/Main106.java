@@ -1,10 +1,12 @@
+package com.solve;
+
 import java.util.*;
-class Main {
+class Main106 {
 
     static int n,m;
     static int[] dy;
     public static void main(String[] args) {
-        Main T = new Main();
+        Main106 T = new Main106();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         m = kb.nextInt();
@@ -20,3 +22,4 @@ class Main {
         System.out.println(dy[m]);
     }
 }
+
